@@ -115,7 +115,7 @@ void setup() {
 
   if (mqtt_client.connect(client_id, mqtt_user, mqtt_pass)) {
     mqtt_client.publish("TD04_GP03/temp", String(temp_measure).c_str()); 
-    mqtt_client.publish("TD04_GP03/relhum", String(temp_measure).c_str());
+    mqtt_client.publish("TD04_GP03/relhum", String(relative_humidity_measure).c_str());
   }
 
   // ...
